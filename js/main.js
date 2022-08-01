@@ -25,12 +25,7 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
-//클릭시 원하는 슬라이드로 이동 
-$('.gnb li').click(function(){
-    swiper.slideTo($(this).index() + 1);
-    $('.menu_bg').animate({left:'-100%'},200); 
-    $('.menu_btn').removeClass('open');  
-})
+
 
 //로고(h1)을 클릭하면 첫 시작 화면으로 
 $('h1').click(function(){
