@@ -124,13 +124,14 @@ background-image:radial-gradient(circle at top left, rgba(0, 0, 0, 0)40%, rgba(0
 .h_bg { width: 100%; height: 150px; background: #111; position: fixed; z-index: 20;}
 .port_list {padding: 250px 0 0 50px; }
 .main_txt span {color: #fff; font-size: 80px; font-weight: 700;}
+.main_txt span a {font-size: 16px;}
 .list {padding: 60px 0 0 50px; }
 .list li {margin-bottom: 30px;}
 .list a {font-size: 40px; font-weight: 500; color: #fff; }
 
 /* index - proflie */
 
-.pro_main {}
+
 table {width: 80%; margin: auto; text-align: center; color: #fff;}
 table img {width: 250px; height: 300px;}
 table th {font-size: 28px; font-weight: 700;}
@@ -143,6 +144,11 @@ table td {font-size: 20px; padding: 10px 0 10px 0;}
 
 .skill {display: flex; justify-content:space-evenly;  margin: 40px 0; padding-bottom: 80px;  width: 100%;}
 .skill li {padding: 0 20px 0 20px;}
+
+.resume {padding: 80px 0 40px 100px;}
+.resume a {color: #fff; font-size: 20px; font-weight: 500;}
+
+
 .pie-chart {
     position: relative;
     display:inline-block;
