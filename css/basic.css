@@ -121,7 +121,7 @@ background-image:radial-gradient(circle at top left, rgba(0, 0, 0, 0)40%, rgba(0
 
 .in_port { background: #111;}
 
-.h_bg { width: 100%; height: 150px; background: #111; position: fixed;}
+.h_bg { width: 100%; height: 150px; background: #111; position: fixed; z-index: 20;}
 .port_list {padding: 250px 0 0 50px; }
 .main_txt span {color: #fff; font-size: 80px; font-weight: 700;}
 .list {padding: 60px 0 0 50px; }
@@ -138,8 +138,35 @@ table td {font-size: 20px; padding: 10px 0 10px 0;}
 
 .proflie {padding: 40px 0 0 0; color: #fff;}
 
-h2 {margin: auto; padding: 80px 0 0 100px;}
+.proflie h2 {font-size: 40px; font-weight: 500; padding-left: 50px; }
 .pro_content {padding-top: 20px;}
+
+.skill {display: flex; justify-content:space-evenly;  margin: 40px 0; padding-bottom: 80px;  width: 100%;}
+.skill li {padding: 0 20px 0 20px;}
+.pie-chart {
+    position: relative;
+    display:inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; left:50%;
+    width:200px; height:200px;
+    border-radius: 50%;
+    text-align:center; line-height: 200px;
+    font-size:30px;
+    color: #111;
+     transform: translate(-50%, -50%);
+  }
+
+  .center strong{color: #fff;}
+
+
 
 
 

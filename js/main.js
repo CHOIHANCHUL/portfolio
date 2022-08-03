@@ -33,6 +33,45 @@ $('h1').click(function(){
 })
 
 
+//proflile
+
+$(window).ready(function(){
+    draw(60, '.pie-chart1', '#29d40b');
+   draw(60, '.pie-chart2', '#29d40b');
+   draw(50, '.pie-chart3','#d47a0b');
+   draw(50, '.pie-chart4','#d47a0b');
+   draw(40, '.pie-chart5','#d40b1c');
+   draw(40, '.pie-chart6','#d40b1c');
+ });
+ 
+ function draw(max, classname, colorname){
+    var i=1;
+     var func1 = setInterval(function(){
+       if(i<max){
+           color1(i,classname,colorname);
+           i++;
+       } else{
+         clearInterval(func1);
+       }
+     },10);
+ }
+ function color1(i, classname,colorname){
+    $(classname).css({
+         "background":"conic-gradient("+colorname+" 0% "+i+"%, #ffffff "+i+"% 100%)"
+    });
+ }
+ 
+ 
+ function replay(){
+   draw(60, '.pie-chart1', '#29d40b');
+   draw(60, '.pie-chart2', '#29d40b');
+   draw(50, '.pie-chart3','#d47a0b');
+   draw(50, '.pie-chart3','#d47a0b');
+   draw(40, '.pie-chart3','#d40b1c');
+   draw(40, '.pie-chart3','#d40b1c');
+ }
+
+
 
 
 
