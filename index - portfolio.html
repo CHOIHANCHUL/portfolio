@@ -13,6 +13,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/eaeb383721.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body class="in_port">
@@ -46,21 +47,143 @@
             <span>Portfolio</span>
         </div>
         <div class="list">
-            <ul>
-                <li><a href="https://choihanchul.github.io/outback/" target="_blank"><strong>[PC] </strong><span>아웃백 스테이크</span></a></li>
-                <li><a href="https://choihanchul.github.io/nhn/" target="_blank"><strong>[PC] </strong><span>NHN</span></a></li>
-                <li><a href="https://choihanchul.github.io/kbcard/#" target="_blank"><strong>[PC] </strong><span>KBcard</span></a></li>
-                <li><a href="https://choihanchul.github.io/hollys/" target="_blank"><strong>[PC] </strong><span>Hollys</span></a></li>
-                <li><a href="https://choihanchul.github.io/hancompany/" target="_blank"><strong>[PC] </strong><span>Han Company</span></a></li>
-                <li><a href="#" onclick="window.open('https://choihanchul.github.io/kakao/', '_blank', 'width=500 height=700')"><strong>[Mobile Web] </strong><span>kakao Store</span></a></li>
-                <li><a href="#" onclick="window.open('https://choihanchul.github.io/asan/', '_blank', 'width=500 height=700')"><strong>[Mobile Web] </strong><span>Asan</span></a></li>
-                <li><a href="https://choihanchul.github.io/hotel-lago/" target="_blank"><strong>[Responsive] </strong><span>Hotel Lago</span></a></li>
-                <li><a href="https://choihanchul.github.io/tiretech/" target="_blank"><strong>[Responsive] </strong><span>타이어테크</span></a></li>
-                <li><a href="https://choihanchul.github.io/15responsive/" target="_blank"><strong>[Responsive] </strong><span>주식차트공부</span></a></li>
-                <li><a href="https://choihanchul.github.io/bootstrap/" target="_blank"><strong>[Bootstrap] </strong><span>SYMU.CO</span></a></li>
-            </ul>
+            <main class="list_menu">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="btn_all on">ALL</a></li>
+                        <li><a href="#" class="btn_PC">PC</a></li>
+                        <li><a href="#" class="btn_MOBILE">MOBILE</a></li>
+                        <li><a href="#" class="btn_RESPONSIVE">RESPONSIVE</a></li>
+                        <li><a href="#" class="btn_BOOTSTRAP">BOOTSTRAP</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <ul class="thumb">
+                        <li class="all MOBILE">
+                            <a href="#" onclick="window.open('https://choihanchul.github.io/asan/', '_blank', 'width=500 height=700'); return false;">
+                                <figure>
+                                    <img src="media/asan.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Mobile Web]</p>
+                                        <p class="desc">ASAN</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li> 
+                        <li class="all PC">
+                            <a href="https://choihanchul.github.io/hancompany/" target="_blank">
+                                <figure>
+                                    <img src="media/han.PNG" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[PC]</p>
+                                        <p class="desc">Han Company</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>               
+                        <li class="all PC">
+                            <a href="https://choihanchul.github.io/hollys/" target="_blank">
+                                <figure>
+                                    <img src="media/hollys.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[PC]</p>
+                                        <p class="desc">Hollys</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all MOBILE">
+                            <a href="#" onclick="window.open('https://choihanchul.github.io/kakao/', '_blank', 'width=500 height=700'); return false;">
+                                <figure>
+                                    <img src="media/kakao.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Mobile Web]</p>
+                                        <p class="desc">kakao Store</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all PC">
+                            <a href="https://choihanchul.github.io/kbcard/#" target="_blank">
+                                <figure>
+                                    <img src="media/kbcard.png" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[PC]</p>
+                                        <p class="desc">KBcard</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all RESPONSIVE">
+                            <a href="https://choihanchul.github.io/hotel-lago/" target="_blank">
+                                <figure>
+                                    <img src="media/lago.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Responsive]</p>
+                                        <p class="desc">Hotel Lago</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all PC">
+                            <a href="https://choihanchul.github.io/nhn/" target="_blank">
+                                <figure>
+                                    <img src="media/nhn.png" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[PC]</p>
+                                        <p class="desc">NHN</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all PC">
+                            <a href="https://choihanchul.github.io/outback/" target="_blank">
+                                <figure>
+                                    <img src="media/outback.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[PC]</p>
+                                        <p class="desc">아웃백 스테이크</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all RESPONSIVE">
+                            <a href="https://choihanchul.github.io/15responsive/" target="_blank">
+                                <figure>
+                                    <img src="media/stock.PNG" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Responsive]</p>
+                                        <p class="desc">주식차트공부</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all BOOTSTRAP">
+                            <a href="https://choihanchul.github.io/bootstrap/" target="_blank">
+                                <figure>
+                                    <img src="media/symu.jpg" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Bootstrap]</p>
+                                        <p class="desc">SYMU.CO</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="all RESPONSIVE">
+                            <a href="https://choihanchul.github.io/tiretech/" target="_blank">
+                                <figure>
+                                    <img src="media/tire.png" alt="">
+                                    <div class="text_warp">
+                                        <p class="title">[Responsive]</p>
+                                        <p class="desc">타이어테크</p>
+                                    </div>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </main>
         </div>
     </div>
-
 </body>
 </html>

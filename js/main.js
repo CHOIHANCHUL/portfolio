@@ -73,7 +73,43 @@ $(window).ready(function(){
 
 
 
+ //portfolio
 
+ var $btn = $('nav li a');       //버튼 역할을 하는 a를 변수로
+
+ $btn.click(function(){
+     $btn.removeClass('on'); 
+     $(this).addClass('on');
+ });
+ 
+ /*  isotope 플러그인 설정*/
+ $('.thumb').isotope({
+     // options
+     itemSelector: '.all',
+     layoutMode: 'fitRows',
+     stagger: 100,        //각각의 li가 시간차를 두고 자리를 잡는다(1000 = 1초)
+     transitionDuration: '0.8s'
+ });
+ 
+ /*  isotope 플러그인을 이용한 필터링 */
+ $('.btn_all').click(function(){
+     $('.thumb').isotope({ filter: '*' });
+ });
+ 
+ $('.btn_PC').click(function(){
+     $('.thumb').isotope({ filter: '.PC' });
+ });
+ $('.btn_MOBILE').click(function(){
+     $('.thumb').isotope({ filter: '.MOBILE' });
+ });
+ $('.btn_RESPONSIVE').click(function(){
+     $('.thumb').isotope({ filter: '.RESPONSIVE' });
+ });
+ $('.btn_BOOTSTRAP').click(function(){
+     $('.thumb').isotope({ filter: '.BOOTSTRAP' });
+ });
+ 
+ 
 
 
 
