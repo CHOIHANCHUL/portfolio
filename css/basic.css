@@ -123,6 +123,14 @@ background-image:radial-gradient(circle at top left, rgba(0, 0, 0, 0)40%, rgba(0
 
 /* index - portfolio*/
 
+.pro_main {width: 50%; margin: auto;}
+.pro_main figure {  text-align: center;}
+.pro_main p {padding: 10px 0;}
+.pro_main .text_warp .title {font-size: 30px; font-weight: 700;}
+.pro_main .text_warp .desc{font-size: 20px}
+
+
+.pro_main figure img {width: 35%; height: 350px;}
 
 .in_port { background: #111;}
 
