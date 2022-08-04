@@ -11,10 +11,18 @@ body { position:relative; height:100%; font-family:'Noto Sans KR', Arial, Helvet
 
 
 /* header */
+
+.header {position: relative; }
 .header h1 {position: fixed;  top:40px; left:50px; font-size:700; z-index:20; font-size:16px; }
 .header h1 i {font-size: 60px; margin-left: 28px;}
 .header h1 a {color:#fff;}
 .header h1 a>span { display:block; text-align: center;}
+
+.page_control {position: absolute; position: fixed; bottom:50%;  z-index:11;  }
+.page_control > div{ display:inline-block; color:#fff; cursor:pointer;  }
+
+.prev_btn {position: absolute; left: 50px;}
+.next_btn {position: absolute; left:  1815px; }
 
 .menu_btn { position:fixed; top:40px; right:50px; z-index:20; cursor:pointer; width:40px; height:40px;}
 .menu_btn span { display:block; width:60px; height:3px; margin:5px 0; background:#fff;  }
@@ -105,11 +113,7 @@ background-image:radial-gradient(circle at top left, rgba(0, 0, 0, 0)40%, rgba(0
 .btn_wrap a:hover::before { width:0%; transition-delay:0ms}
 .btn_wrap a:hover::after { width:100%; transition-delay:300ms}
 
-.page_control {position: fixed; bottom:400px; right:20px;  z-index:11;  }
-.page_control > div{position: relative;  display:inline-block; color:#fff; cursor:pointer;  }
 
-.prev_btn {position: absolute; left: -1700px;}
-.next_btn {position: absolute; left: -50px; }
 
 .swiper-pagination { color:#fff; }
 .swiper-pagination-current { font-size:16px;}
