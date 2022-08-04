@@ -18,13 +18,13 @@ body { position:relative; height:100%; font-family:'Noto Sans KR', Arial, Helvet
 .header h1 a {color:#fff;}
 .header h1 a>span { display:block; text-align: center;}
 
-.page_control {position: absolute; position: fixed; bottom:50%;  z-index:11;  }
+.page_control {position: absolute; position: fixed; width: 100%; bottom:50%;  z-index:11;  }
 .page_control > div{ display:inline-block; color:#fff; cursor:pointer;  }
 
 .prev_btn {position: absolute; left: 50px;}
-.next_btn {position: absolute; left:  1815px; }
+.next_btn {position: absolute; right: 50px;  }
 
-.menu_btn { position:fixed; top:40px; right:50px; z-index:20; cursor:pointer; width:40px; height:40px;}
+.menu_btn {position: relative; position:fixed; top:40px; right:50px; z-index:20; cursor:pointer; width:40px; height:40px;}
 .menu_btn span { display:block; width:60px; height:3px; margin:5px 0; background:#fff;  }
 .menu_btn span:nth-child(1) {position:relative; width:40px; float:right; transition:0.3s ease-in;}
 .menu_btn span:nth-child(1):after { display:block; content:""; color:#fff; position:absolute; right:0; bottom:-10px; opacity:0; font-size:12px; transition:0.2s ease-in 0.2s;}
